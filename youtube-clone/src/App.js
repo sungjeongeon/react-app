@@ -1,21 +1,23 @@
-import './App.css';
-import youtubeData from './data/youtubeData.json';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Explore from './pages/Explore';
+import Subscription from './pages/Subscription';
+import Assignment from './pages/Assignment';
 
 function App() {
-  console.log('youtubeData :',youtubeData);
-  console.log('영상 아이디 : ', youtubeData['data'][1]['id']);
-  console.log('채널 아이디 : ', youtubeData['data'][1]['channelId']);
-  console.log('업로드 날짜 : ', youtubeData['data'][1]['date']);
-  console.log('영상 제목 : ', youtubeData['data'][1]['title']);
-  console.log('영상 썸네일 : ', youtubeData['data'][1]['thumbnail']);
-  console.log('영상 정보 : ', youtubeData['data'][1]['description']);
-  console.log('채널명 : ', youtubeData['data'][1]['channelTitle']);
-  console.log('카테고리 : ', youtubeData['data'][1]['category']);
-  console.log('조회수 : ', youtubeData['data'][1]['viewCount']);
-  console.log('좋아요수 : ', youtubeData['data'][1]['likeCount']);
-  console.log('채널 주소 : ', youtubeData['data'][1]['channelUrl']);
-  console.log('채널 썸네일 : ', youtubeData['data'][1]['channelThumbnail']);
-  return <div>리액트로 데이터 불러오기</div>;
+    return (
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/explore" element={<Explore />} />
+            <Route path="/subscription" element={<Subscription />} />
+            <Route path="/assignment" element={<Assignment />} />
+        </Routes>
+        /*<div>
+        <Route path="/" exact={true} component={Home} />
+        <Route path="/Explore" component={Explore} />
+        <Route path="/subscription" component={Subscription} />
+        </div>*/
+    );
 }
 
 export default App;
