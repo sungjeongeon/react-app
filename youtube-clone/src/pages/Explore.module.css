@@ -1,0 +1,19 @@
+.container {
+    width: 300px;
+    height: 300px;
+}
+@media screen and (max-width: 600px){
+    .container {
+        background-color: black;
+    }
+}
+@media screen and (min-width:600px) and (max-width: 1000px){
+    .container {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 1000px){
+    .container {
+        background-color: blue;
+    }
+}

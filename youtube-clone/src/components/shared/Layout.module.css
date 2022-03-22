@@ -14,5 +14,15 @@
     flex: 1;
 }
 .contents {
+    margin-left: 240px;
     flex: 1;
+  }
+.contentsHidden {
+    margin-left: 0px;
+}
+
+@media screen and (max-width:911px) {
+    .contents {
+        margin-left: 72px;
+    }
 }

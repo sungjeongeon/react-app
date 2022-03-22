@@ -1,9 +1,10 @@
 import Layout from '../components/shared/Layout';
+import ContentsLayout from '../components/shared/ContetnsLayout'
 
 function Explore() {
     return (
-        <Layout>
-            <div>*탐색</div>
+        <Layout activeMenu="explore">
+            <ContentsLayout>컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠</ContentsLayout>
         </Layout>
     );
 }
