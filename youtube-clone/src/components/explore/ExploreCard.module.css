@@ -1,0 +1,54 @@
+a {
+    text-decoration: none;
+    color: #606060;
+  }
+  .card {
+    display: flex;
+    margin-bottom: 16px;
+    max-width: 862px;
+  }
+  .thumbnail { 
+    flex: 0 0 246px;
+    width: 246px;
+    object-fit: fill;
+    margin-right: 16px;
+  }
+  .title {
+    color: #030303;
+    font-size: 18px;
+  }
+  .info {
+    flex: 1;
+    width: 200px;
+  }
+  .meta {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  .uploader:hover {
+    color: #030303;
+  }
+  .uploader::after,
+  .view::after {
+    content: '•';
+    margin: 0 4px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+  .title,
+  .desc {
+    /* 2줄이 넘을 경우 ... 표시 */
+    display: -webkit-box;
+    overflow: hidden;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+  @media screen and (max-width: 529px) {
+    .info {
+      display: none;
+    }
+  }

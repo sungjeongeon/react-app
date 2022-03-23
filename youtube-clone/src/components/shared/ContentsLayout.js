@@ -1,4 +1,4 @@
-import styles from './ContetnsLayout.module.css';
+import styles from './ContentsLayout.module.css';
 
 function ContetnsLayout({children}) {
     return (
