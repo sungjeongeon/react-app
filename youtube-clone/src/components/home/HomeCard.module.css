@@ -1,0 +1,40 @@
+.card {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .thumbnail {
+    width: 100%;
+    object-fit: fill;
+  }
+  .info {
+    display: flex;
+    margin-top: 12px;
+  }
+  .channelImg {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    margin-right: 12px;
+  }
+  
+  .title {
+    color: #030303;
+  }
+  .uploader {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  .view {
+    font-size: 14px;
+  }
+  .view::after {
+    content: '•';
+    margin: 0 4px;
+  }
+  .date {
+    font-size: 14px;
+  }

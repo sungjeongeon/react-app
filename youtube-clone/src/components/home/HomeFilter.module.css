@@ -1,0 +1,16 @@
+.black {
+    background-color: #030303;
+    color: white;
+  }
+  .gray {
+    background-color: #f2f2f2;
+  }
+  
+  .black,
+  .gray {
+    border: 1px solid #d0d0d0;
+    border-radius: 16px;
+    padding: 6px 12px;
+    margin: 12px 12px 12px 0;
+    cursor: pointer;
+  }
