@@ -1,3 +1,6 @@
+import moment from 'moment';
+import 'moment/locale/ko';
+import { ProcessViewCount, ProcessUploadDate} from '../../utils';
 import styles from './HomeCard.module.css';
 
 function HomeCard(data, index) {
@@ -25,8 +28,12 @@ function HomeCard(data, index) {
           <div className={styles.title}> {data.title}</div>
           <div className={styles.uploader}>{data.channelTitle}</div>
           <div className={styles.flex}>
-            <div className={styles.view}>{data.viewCount}</div>
-            <div className={styles.date}>{data.date}</div>
+            <div className={styles.view}>
+              {ProcessViewCount(data.viewCount)}
+            </div>
+            <div className={styles.date}>
+              {ProcessUploadDate(moment(data.date))}
+            </div>
           </div>
         </div>
       </div>
